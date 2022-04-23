@@ -7,6 +7,7 @@ import os
 #####################################################
 #   The repository 'djitellopy' can be found here:  #
 #   https://github.com/damiafuentes/DJITelloPy      #
+#   The program uses djitellopy version 2.4.0       #
 #############################################################################################################
 #   A quick help to understand the commands being sent to the drone would be to check this guide:           #
 #   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf            #
