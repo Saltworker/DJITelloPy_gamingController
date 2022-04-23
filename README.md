@@ -26,8 +26,8 @@ The current button and axis alignments are:
 - button 1 (◯): flip right
 - button 2 (△): flip left
 - button 3 (□): flip forward
-- button 4 (L1): take photos (using cv2 and get_frame_read() )
-- button 5: (R1): record a "video" - compile this using the video compiler (using cv2 and get_frame_read() )
+- button 4 (L1): take photos (using cv2 and DJITelloPy command get_frame_read() )
+- button 5: (R1): record a "video" - compile this using the video compiler (using cv2 and DJITelloPy command get_frame_read() )
 - button 6: (SELECT): Emergencylands (all motors are turned off; a hard landing) if the tello is flying and resets if not (TO RESET AUTOMATICALLY, CHECK THE PROGRAM FOR EXPLAINATION ON HOW TO)
 - button 7: (START): Takeoff OR throwfly if the tello is not flying and lands (slowly decreases motor speeds over time for a soft landing) if flying
 - button 8: (LEFT THUMBSTICK DOWN PRESS): NO FUNCTION
@@ -39,7 +39,7 @@ The current button and axis alignments are:
 
 NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.
 
-FYI: The pygame window contains all sorts of information given by the tello through get_own_udp_object()
+FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
 TELLO SDK 3.0 guides:
 
