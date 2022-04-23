@@ -1,5 +1,5 @@
 Control your tello with a gaming controller using the repository 'DJITelloPy' and pygame.
-
+DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
 The following program lets you control your Tello-drone with any gaming controller that
 pygame supports.
