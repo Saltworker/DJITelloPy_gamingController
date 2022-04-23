@@ -4,7 +4,9 @@ DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 The repository contains the program itself as well as a video compiler for the video recordings you can make with the program.
 
 This project is largely done thanks to pygame.org
+
 Link: www.pygame.org/docs/ref/joystick.html
+
 PRO TIP: Use the example program given in the following link to check your controller's inputs
 
 3 STEPS ON HOW TO USE THE PROGRAM:
