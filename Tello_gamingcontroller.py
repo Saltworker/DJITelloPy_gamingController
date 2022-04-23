@@ -1,32 +1,15 @@
-#########################
-# Made by Saltworker    #
-# 23.4.2022             #
-#########################
-
-#################################################################################################
-#   The following program lets you control your Tello-drone with any gaming controller that     #
-#   pygame supports (pretty much all gaming controllers, both wired and bluetooth).             #
-#   To run a playstation controller, further requirements are needed to run the program.        #
-#   If you want to use a playstation 3 or 4-controller, try your luck with the following links: #
-#   A wired PS4-controller (YT-video): https://www.youtube.com/watch?v=a3JaBBD2U2o              #
-#   A wired PS3-controller (YT-video): https://www.youtube.com/watch?v=1ZaZVvnV5D4              #
-#   There is in fact ways to also use fx a playstation 2 controller but caution is advised to   #
-#   prevent you from downloading malicious code.                                                #
-#################################################################################################
-#   A quick help to understand the commands being sent to the drone would be to check this guide:#
-#   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf
-#   Mission Pad an Flight Map guide sdk 3.0:
-#   https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf#
-##################################################################################################
-#   Tello camera default settings: 720p, 30fps, bitrate 1-5 Mbps #
-##################################################################
-
 import pygame
 from djitellopy import tello
-import Setupscripts2 as kp
 import cv2
 import time
 import os
+
+#############################################################################################################
+#   A quick help to understand the commands being sent to the drone would be to check this guide:           #
+#   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf            #
+#   Mission Pad an Flight Map guide sdk 3.0:                                                                #
+#   https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf#
+#############################################################################################################
 
 ### Imports controllerbinds ###
 pygame.init()
@@ -36,25 +19,28 @@ joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_coun
 ### Connects to the tello drone and gets its get_frame_read ###
 me = tello.Tello()
 me.connect(wait_for_state=True)
+me.send_command_with_return('setfps high') # Use 'low' for 5fps, 'middle' for 15fps and 'high' for 30fps
+me.send_command_with_return('setresolution high') # Use 'low' for 480p and 'high' for 720p
+me.send_command_with_return('setbitrate 0') # Use '0' for auto Mbps spanning 1-5Mbps, '1' for 1Mbps, '2' for 2Mbps...
+#NOTE: Default camera settings: fps = 'middle', resolution = 'high', bitrate = '0' (auto)
 me.streamon()
 
 ### Important variables for some of the functions ###
 recording = False
 downvision = False
-stream_on = True
-motoron = False
-
-### EDIT: ###
-cam = False
 
 global img
 global dirNameVid
-global data_string
 
 # Define some colors.
 BLACK = pygame.Color('black')
 WHITE = pygame.Color('white')
 
+
+#################################################################################
+### Initializing the controller-binds was done thanks to the following link:  ###
+### https://www.pygame.org/docs/ref/joystick.html                             ###
+#################################################################################
 
 # This is a simple class that will help us print to the screen.
 # It has nothing to do with the joysticks, just outputting the
@@ -90,11 +76,6 @@ clock = pygame.time.Clock()
 
 # Get ready to print.
 textPrint = TextPrint()
-
-#################################################################################
-### Initializing the controller-binds was done thanks to the following link:  ###
-### https://www.pygame.org/docs/ref/joystick.html                             ###
-#################################################################################
 
 #############################################################
 ### Forever loop for reading controller input with Pygame ###
@@ -165,12 +146,12 @@ while not done:
         #######################################################################################################
 
         ### Own controllerbinds are set underneath here: ###
-
         # Controller keys open for use:
         # joystick.get_button(8)
         # joystick.get_button(9)
         # joystick.get_axis(5)
         # joystick.get_hat(1)
+
         if pygame.key.get_focused() == True:
 
             ### The Controllers symbols (X, O, □, △; A, B, X, Y; Whatever the combination may be) are utilized for each direction of flipping the drone ###
@@ -279,7 +260,6 @@ while not done:
         )
 
         for i in range(len(data)):
-            # print(list(data_string)[i])
             tello_data = list(data_string)[i]
             tello_info = list(STATE_FIELDS)[i]
             textPrint.tprint(screen, "tello {} value: {}".format(tello_info, str(tello_data)))
@@ -290,6 +270,6 @@ while not done:
 
         # Depending on your screen hz clock.tick can be adjusted.
         clock.tick(144)
+### The following closes the two windows opened by the program once the pygame window is closed ###
 pygame.quit()
 cv2.destroyAllWindows()
-### Go ahead and end the program ###
