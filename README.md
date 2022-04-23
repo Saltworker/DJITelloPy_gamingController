@@ -18,7 +18,9 @@ ABOUT THE PROGRAM:
 
 NOTE: Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 Lets you control your Tello-drone with any gaming controller that pygame supports.
+
 I used a playstation dualshock 3 controller.
+
 The current button and axis alignments are:
 - button 0 (X): flip backwards
 - button 1 (◯): flip right
