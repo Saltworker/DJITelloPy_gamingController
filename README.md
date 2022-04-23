@@ -32,12 +32,12 @@ The current button and axis alignments are:
 - button 5: (R1): record a "video" - compile this using the video compiler (using cv2 and DJITelloPy command get_frame_read() )
 - button 6: (SELECT): Emergencylands (all motors are turned off; a hard landing) if the tello is flying and resets if not (TO RESET AUTOMATICALLY, CHECK THE PROGRAM FOR EXPLAINATION ON HOW TO)
 - button 7: (START): Takeoff OR throwfly if the tello is not flying and lands (slowly decreases motor speeds over time for a soft landing) if flying
-- button 8: (LEFT THUMBSTICK DOWN PRESS): NO FUNCTION
-- button 9: (RIGHT THUMBSTICK DOWN PRESS): NO FUNCTION
+- button 8: (LEFT THUMBSTICK DOWN PRESS): NO ASSIGNED FUNCTION
+- button 9: (RIGHT THUMBSTICK DOWN PRESS): NO ASSIGNED FUNCTION
 - axis [0,1] (LEFT THUMBSTICK): fly left/right; fly forward/backward
 - axis [2,3] (RIGHT THUMBSTICK): rotate left/right; fly upward/downward
 - axis [4] (L2): When pressed down, use the tello downward camera (IR-sensitive). When not pressed down, use the tello forward camera (colored)
-- axis[5] (R2): NO FUNCTION
+- axis[5] (R2): NO ASSIGNED FUNCTION
 
 NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.
 
