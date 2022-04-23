@@ -4,23 +4,12 @@ import cv2
 import time
 import os
 
-#####################################################
-#   The repository 'djitellopy' can be found here:  #
-#   https://github.com/damiafuentes/DJITelloPy      #
-#   The program uses djitellopy version 2.4.0       #
-#############################################################################################################
-#   A quick help to understand the commands being sent to the drone would be to check this guide:           #
-#   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf            #
-#   Mission Pad and Flight Map guide sdk 3.0:                                                               #
-#   https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf#
-#############################################################################################################
-
 ### Imports controllerbinds ###
 pygame.init()
 pygame.joystick.init()
 joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]
 
-### Connects to the tello drone and gets its get_frame_read ###
+### Connects to the tello drone, selects camera quality (only applies to front camera) and gets its get_frame_read() ###
 me = tello.Tello()
 me.connect(wait_for_state=True)
 me.send_command_with_return('setfps high') # Use 'low' for 5fps, 'middle' for 15fps and 'high' for 30fps
@@ -158,7 +147,7 @@ while not done:
 
         if pygame.key.get_focused() == True:
 
-            ### The Controllers symbols (X, O, □, △; A, B, X, Y; Whatever the combination may be) are utilized for each direction of flipping the drone ###
+            ### The Controllers symbols (X, ◯, □, △; A, B, X, Y; Whatever the combination may be) are utilized for each direction of flipping the drone ###
             if joystick.get_button(0) == 1:
                 me.send_command_with_return("flip b")
             if joystick.get_button(1) == 1:
@@ -253,16 +242,16 @@ while not done:
         STATE_FIELDS = (
             # Tello EDU with mission pads enabled only
             'mid', 'x', 'y', 'z', 'mpry',
-            # 'mpry': (custom format 'x,y,z')
+            # 'mpry': (custom format 'pitch', 'yaw', 'roll')
             # Common entries
             'pitch', 'roll', 'yaw',
             'vgx', 'vgy', 'vgz',
             'templ', 'temph',
             'tof', 'h', 'bat', 'baro',
             'time', 'agx', 'agy', 'agz',
-
         )
 
+        ### Prints STATE_FIELDS with their respective values ###
         for i in range(len(data)):
             tello_data = list(data_string)[i]
             tello_info = list(STATE_FIELDS)[i]
