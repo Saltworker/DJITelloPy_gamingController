@@ -31,7 +31,8 @@ The current button and axis alignments are:
 - axis [2,3] (RIGHT THUMBSTICK): rotate left/right; fly upward/downward
 - axis [4] (L2): When pressed down, use the tello downward camera (IR-sensitive). When not pressed down, use the tello forward camera (colored)
 - axis[5] (R2): NO FUNCTION
-THERE ARE NO HAT ALIGNMENTS USED IN THE PROGRAM.
+
+NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.
 
 A LITTLE HELP TO USE PLAYSTATION CONTROLLERS:
 To run a playstation controller, further requirements are needed to run the program.
