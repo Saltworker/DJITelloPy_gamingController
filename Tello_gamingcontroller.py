@@ -11,7 +11,7 @@ import os
 #############################################################################################################
 #   A quick help to understand the commands being sent to the drone would be to check this guide:           #
 #   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf            #
-#   Mission Pad and Flight Map guide sdk 3.0:                                                                #
+#   Mission Pad and Flight Map guide sdk 3.0:                                                               #
 #   https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf#
 #############################################################################################################
 
