@@ -13,6 +13,9 @@ PRO TIP: Use the example program given in the following link to check your contr
 3. run the program.
 
 ABOUT THE PROGRAM:
+
+![image](https://user-images.githubusercontent.com/82200669/164916832-5ac991d6-1196-4c4e-9c7d-8a842a14ee99.png)
+
 NOTE: Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 Lets you control your Tello-drone with any gaming controller that pygame supports.
 I used a playstation dualshock 3 controller.
