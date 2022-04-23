@@ -16,7 +16,7 @@ ABOUT THE PROGRAM:
 NOTE: Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 Lets you control your Tello-drone with any gaming controller that pygame supports.
 I used a playstation dualshock 3 controller.
-The current button alignments are:
+The current button and axis alignments are:
 - button 0 (X): flip backwards
 - button 1 (◯): flip right
 - button 2 (△): flip left
@@ -27,7 +27,6 @@ The current button alignments are:
 - button 7: (START): Takeoff OR throwfly if the tello is not flying and lands (slowly decreases motor speeds over time for a soft landing) if flying
 - button 8: (LEFT THUMBSTICK DOWN PRESS): NO FUNCTION
 - button 9: (RIGHT THUMBSTICK DOWN PRESS): NO FUNCTION
-The current axis alignments are:
 - axis [0,1] (LEFT THUMBSTICK): fly left/right; fly forward/backward
 - axis [2,3] (RIGHT THUMBSTICK): rotate left/right; fly upward/downward
 - axis [4] (L2): When pressed down, use the tello downward camera (IR-sensitive). When not pressed down, use the tello forward camera (colored)
