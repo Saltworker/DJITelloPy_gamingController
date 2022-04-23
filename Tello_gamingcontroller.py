@@ -4,6 +4,9 @@ import cv2
 import time
 import os
 
+#####################################################
+#   The repository 'djitellopy' can be found here:  #
+#   https://github.com/damiafuentes/DJITelloPy      #
 #############################################################################################################
 #   A quick help to understand the commands being sent to the drone would be to check this guide:           #
 #   Tello SDK 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf            #
