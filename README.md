@@ -39,6 +39,8 @@ The current button and axis alignments are:
 
 NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.
 
+FYI: The pygame window contains all sorts of information given by the tello through get_own_udp_object()
+
 TELLO SDK 3.0 guides:
 
 A quick help to understand the commands being sent to the drone would be to check this guide:
