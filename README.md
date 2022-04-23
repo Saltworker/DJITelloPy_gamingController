@@ -50,5 +50,4 @@ A wired PS4-controller: https://www.youtube.com/watch?v=a3JaBBD2U2o
 
 A wired PS3-controller: https://www.youtube.com/watch?v=1ZaZVvnV5D4
 
-There is in fact ways to also use fx a playstation 2 controller but caution is advised to
-prevent you from downloading malicious code.
+There is in fact ways to also use fx a playstation 2 controller but caution is advised to prevent you from downloading malicious code.
