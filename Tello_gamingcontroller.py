@@ -12,11 +12,11 @@ joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_coun
 ### Connects to the tello drone, selects camera quality (only applies to front camera) and gets its get_frame_read() ###
 me = tello.Tello()
 me.connect(wait_for_state=True)
+me.streamon()
 me.send_command_with_return('setfps high') # Use 'low' for 5fps, 'middle' for 15fps and 'high' for 30fps
 me.send_command_with_return('setresolution high') # Use 'low' for 480p and 'high' for 720p
 me.send_command_with_return('setbitrate 0') # Use '0' for auto Mbps spanning 1-5Mbps, '1' for 1Mbps, '2' for 2Mbps...
 #NOTE: Default camera settings: fps = 'middle', resolution = 'high', bitrate = '0' (auto)
-me.streamon()
 
 ### Important variables for some of the functions ###
 recording = False
