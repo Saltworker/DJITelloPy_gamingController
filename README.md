@@ -71,7 +71,7 @@ def image_to_video(imagefolder, videoname, fps):
     height, width, layers = frame.shape
 
     ### Explaination: cv2.videoWriter([Video location + video name], 0, [Framerate: 30], [resolution: size] ###
-    ### To move video compiling location, edit {dirNameVid} and select another location for location of the compiled video ###
+    ### To move video compiling location, edit {dirNameVid} and select another location of the compiled video ###
     video = cv2.VideoWriter(f'Resources/Video/{video_name}_{time.time()}.avi', 0, fps, (width, height))
 
     for image in images:
