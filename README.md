@@ -51,13 +51,11 @@ https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf
 
 Mission Pad an Flight Map guide sdk 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf
 
-## A LITTLE HELP TO USE PLAYSTATION CONTROLLERS:
+## A little help to use a playstation dualshock 3/4 controller:
 
-To run a playstation controller, further requirements are needed to run the program.
-If you want to use a playstation 3 or 4-controller, try your luck with the following links:
+To run any playstation controller, further requirements are needed to run the program.
+If you want to use a playstation 3 or 4 controller, try your luck with the following links:
 
 A wired PS4-controller: https://www.youtube.com/watch?v=a3JaBBD2U2o
 
 A wired PS3-controller: https://www.youtube.com/watch?v=1ZaZVvnV5D4
-
-There is in fact ways to also use fx a playstation 2 controller however caution is advised to prevent you from downloading malicious code.
