@@ -12,11 +12,11 @@ joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_coun
 ### Connects to the tello drone, selects camera quality (only applies to front camera) and gets its get_frame_read() ###
 me = tello.Tello()
 me.connect(wait_for_state=True)
+#NOTE: Default camera settings: fps = 'middle', resolution = 'high', bitrate = '0' (auto)
 me.streamon()
 me.send_command_with_return('setfps high') # Use 'low' for 5fps, 'middle' for 15fps and 'high' for 30fps
 me.send_command_with_return('setresolution high') # Use 'low' for 480p and 'high' for 720p
 me.send_command_with_return('setbitrate 0') # Use '0' for auto Mbps spanning 1-5Mbps, '1' for 1Mbps, '2' for 2Mbps...
-#NOTE: Default camera settings: fps = 'middle', resolution = 'high', bitrate = '0' (auto)
 
 ### Important variables for some of the functions ###
 recording = False
@@ -189,7 +189,7 @@ while not done:
                     time.sleep(0.2)
                 else:
                     ### The reboot function ###
-                    ### Make sure to give yourself time by manually changing the amount of retries tello.py does ###
+                    ### Make sure to give yourself time by changing the amount of retries tello.py does ###
                     ### to more than 3 or even more if needed to connect to the drone without exiting the program. ###
                     ### WHERE TO FIND: "tello.py" l. 33 - RETRY_COUNT = X number of retries after a failed command. ###
                     ### ALSO: Make sure your computer automatically connects to you desired drone to make a smooth reboot. ###
@@ -221,8 +221,8 @@ while not done:
                 downvision = False
 
             ### Utilizes the two joysticks and their axes as the four dimensions of travel for the Tello drone ###
-            me.send_rc_control(int(joystick.get_axis(0) * 100), int(joystick.get_axis(1) * (-100)),
-                               int(joystick.get_axis(3) * (-100)), int(joystick.get_axis(2) * 100))
+            me.send_rc_control(int(joystick.get_axis(2) * 100), int(joystick.get_axis(3) * (-100)),
+                               int(joystick.get_axis(1) * (-100)), int(joystick.get_axis(0) * 100))
         else:
             ### OPTIONAL: When tabbed out of the Pygame-window, the Tello drone will only do the following: (is set to rotate) ###
             me.send_rc_control(0, 0, 0, 20)
