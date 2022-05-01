@@ -56,7 +56,7 @@ import cv2
 import os
 import time
 
-### Run this function directly to convert langer amounts of images to video ###
+### Run this function to convert langer amounts of images to video ###
 def image_to_video(imagefolder, videoname, fps):
 
     ### Select a folder which images shall be compiled to a video ###
