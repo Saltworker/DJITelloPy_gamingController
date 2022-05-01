@@ -17,12 +17,10 @@ PRO TIP: Use the example program given in the following link to check your contr
 
 ## 3 STEPS ON HOW TO USE THE PROGRAM:
 1. Have your desired gaming controller connected to your computer. Make sure your computer reads its input.
-2. Turn on the tello and connect to its wifi.
+2. Turn on the tello and connect to its wifi. Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 3. Run the program.
 
 ## ABOUT THE PROGRAM:
-
-Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 
 The current button and axis alignments are:
 - **button 0** (X): flip backwards
