@@ -1,6 +1,9 @@
 Control your tello with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
+![image](https://user-images.githubusercontent.com/82200669/164916832-5ac991d6-1196-4c4e-9c7d-8a842a14ee99.png)
+
+
 The repository contains the program itself as well as a video compiler for the video recordings you can make with the program.
 
 This project is largely done thanks to pygame.org
@@ -15,8 +18,6 @@ PRO TIP: Use the example program given in the following link to check your contr
 3. Run the program.
 
 ABOUT THE PROGRAM:
-
-![image](https://user-images.githubusercontent.com/82200669/164916832-5ac991d6-1196-4c4e-9c7d-8a842a14ee99.png)
 
 NOTE: Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 
