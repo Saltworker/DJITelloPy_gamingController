@@ -50,7 +50,7 @@ The following settings are applied in the program:
 - Resolution is set to 'high' = 720p. It can somewhat be used as a zoom-function.
 - Bitrate (Mbps) is set to 'auto' = 0. Change this is you want a specific video quality.
 
-Here you can see video_compiler.py:
+Here you can see the program "Video_compiler.py":
 ```python
 import cv2
 import os
