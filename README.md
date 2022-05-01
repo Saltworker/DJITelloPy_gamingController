@@ -44,6 +44,37 @@ _NO HAT ALIGNMENTS ARE USED IN THE PROGRAM._
 
 FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
+## Use this program to compile a video from images:
+
+```python
+import cv2
+import os
+import subprocess
+import time
+import ffmpeg
+
+### Select a folder which images shall be compiled to a video ###
+image_folder = f'Resources/Video/{imagefolder}'
+
+### Select a name for your video - time is currently included ###
+### NOTE: If desired, remove the section "_{time.time()}" to remove time from video name ###
+video_name = videoname
+
+images = [img for img in os.listdir(image_folder) if img.endswith(".jpg")]
+frame = cv2.imread(os.path.join(image_folder, images[0]))
+height, width, layers = frame.shape
+
+### Explaination: cv2.videoWriter([Video location + video name], 0, [Framerate: 30], [resolution: size] ###
+### NOTE: To move video compiling location, edit {dirNameVid} and select another location for location of the compiled video ###
+video = cv2.VideoWriter(f'Resources/Video/{video_name}_{time.time()}.avi', 0, fps, (width, height))
+
+for image in images:
+  video.write(cv2.imread(os.path.join(image_folder, image)))
+
+cv2.destroyAllWindows()
+video.release()
+```
+
 ## TELLO SDK 3.0 guides:
 
 A quick help to understand the commands being sent to the drone would be to check this guide:
