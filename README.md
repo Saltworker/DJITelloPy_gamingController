@@ -1,4 +1,4 @@
-# Fly your tello using your old gaming controller
+# Fly your tello using your own gaming controller
 Control your tello with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
