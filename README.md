@@ -1,27 +1,27 @@
+# Fly your tello using your old gaming controller
 Control your tello with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
 ![image](https://user-images.githubusercontent.com/82200669/164916832-5ac991d6-1196-4c4e-9c7d-8a842a14ee99.png)
 
+I personally used a playstation dualshock 3 controller.
 
 The repository contains the program itself as well as a video compiler for the video recordings you can make with the program.
 
-This project is largely done thanks to pygame.org
+## This project was largely done thanks to pygame.org
 
 Link: www.pygame.org/docs/ref/joystick.html
 
 PRO TIP: Use the example program given in the following link to check your controller's inputs
 
-3 STEPS ON HOW TO USE THE PROGRAM:
+## 3 STEPS ON HOW TO USE THE PROGRAM:
 1. Have your desired gaming controller connected to your computer. Make sure your computer reads its input.
 2. Turn on the tello and connect to its wifi.
 3. Run the program.
 
-ABOUT THE PROGRAM:
+## ABOUT THE PROGRAM:
 
-NOTE: Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
-
-I personally used a playstation dualshock 3 controller.
+Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the following functions accordingly.
 
 The current button and axis alignments are:
 - button 0 (X): flip backwards
@@ -44,14 +44,14 @@ NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.
 
 FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
-TELLO SDK 3.0 guides:
+## TELLO SDK 3.0 guides:
 
 A quick help to understand the commands being sent to the drone would be to check this guide:
 https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf
 
 Mission Pad an Flight Map guide sdk 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf
 
-A LITTLE HELP TO USE PLAYSTATION CONTROLLERS:
+## A LITTLE HELP TO USE PLAYSTATION CONTROLLERS:
 
 To run a playstation controller, further requirements are needed to run the program.
 If you want to use a playstation 3 or 4-controller, try your luck with the following links:
