@@ -44,14 +44,12 @@ _NO HAT ALIGNMENTS ARE USED IN THE PROGRAM._
 
 FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
-## Use this program to compile a video from images:
+## You can use this program to compile a video from images:
 
 ```python
 import cv2
 import os
-import subprocess
 import time
-import ffmpeg
 
 ### Select a folder which images shall be compiled to a video ###
 image_folder = f'Resources/Video/{imagefolder}'
