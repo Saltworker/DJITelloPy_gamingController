@@ -50,7 +50,7 @@ The following settings are applied in the program:
 
 - fps is set to 'high' = 30.'
 - Resolution is set to 'high' = 720p. It can somewhat be used as a zoom-function.
-- Bitrate (Mbps) is set to 'auto' = 0. Change this is you want a specific video quality.
+- Bitrate (Mbps) is set to 'auto' = 0. Change this if you want a specific video quality.
 
 Here you can see the program "Video_compiler.py":
 ```python
