@@ -212,11 +212,9 @@ while not done:
             ### This section lets you switch between the front camera and downward IR camera ###
             ### NOTE: The program start with using the front camera or 'downvision 0' ##
             if joystick.get_axis(4) < 0 and downvision == False:
-                #me.set_video_direction(0)
                 me.send_command_with_return('downvision 0')
                 downvision = True
             elif joystick.get_axis(4) > 0 and downvision == True:
-                #me.set_video_direction(1)
                 me.send_command_with_return('downvision 1')
                 downvision = False
 
