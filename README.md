@@ -11,7 +11,7 @@ DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
 I personally switched between using a playstation dualshock 3 controller... 
 
-![image](![image](https://user-images.githubusercontent.com/82200669/203976989-3563b48a-1f61-4f28-9612-f9f54f7ab34a.png))
+![image](https://user-images.githubusercontent.com/82200669/203976989-3563b48a-1f61-4f28-9612-f9f54f7ab34a.png)
 
 and a xbox powera enhanced wired controller.
 
