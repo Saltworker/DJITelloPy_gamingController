@@ -41,7 +41,7 @@ The current button and axis alignments are:
 - **axis [4]** (L2): While pressed down, use the tello downward camera (IR-sensitive). When not pressed down, use the tello forward camera (colored)
 - **axis[5]** (R2): *NO ASSIGNED FUNCTION*
 
-_NO HAT ALIGNMENTS ARE USED IN THE PROGRAM._
+_NOTE: NO HAT ALIGNMENTS ARE USED IN THE PROGRAM._
 
 FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
