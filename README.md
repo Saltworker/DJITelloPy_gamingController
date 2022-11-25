@@ -11,7 +11,7 @@ DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
 I personally switched between using a playstation dualshock 3 controller... 
 
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pricerunner.dk%2Fpl%2F165-3200868924%2FSpil-controllere%2FPowerA-Xbox-Series-X-S-Wired-Controller-Black-Sammenlign-Priser&psig=AOvVaw1JvETrc2MH_VDtj68uPVFj&ust=1669462381532000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCm05WeyfsCFQAAAAAdAAAAABAF)
+![image](![image](https://user-images.githubusercontent.com/82200669/203976989-3563b48a-1f61-4f28-9612-f9f54f7ab34a.png))
 
 and a xbox powera enhanced wired controller.
 
