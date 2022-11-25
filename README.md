@@ -3,7 +3,7 @@ Control your Tello-Talent, Tello-EDU or Tello-Ryze with a gaming controller supp
 
 _This program is primarily targeted towards new tello-users who simply want to fly their tello drone with a controller as easily and effectively as possible._
 
-NOTE: Using a Tello Ryze with this program you will only be able to use features from the SDK 2.0. Tello Ryze users won't be able to do things such as manipulating video quality, using downward camera, etc. Adjustments to the program may be nessecary if using a Tello Ryze with the program.
+NOTE: Using a Tello Ryze with this program you will only be able to use features from the SDK 2.0. Tello Ryze users won't be able to do things such as manipulating video quality, using downward camera, etc. Adjustments to the program may be nessecary if using a Tello Ryze with the program - by simply removing specific parts of the code using SDK 3.0 commands.
 
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
