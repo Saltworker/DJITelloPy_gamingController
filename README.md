@@ -13,7 +13,7 @@ I personally switched between using a playstation dualshock 3 controller...
 
 ![image](https://user-images.githubusercontent.com/82200669/203976989-3563b48a-1f61-4f28-9612-f9f54f7ab34a.png)
 
-and a xbox powera enhanced wired controller.
+... and a xbox powera enhanced wired controller.
 
 The repository contains the program itself as well as a video compiler for the video recordings you can make with the program.
 
