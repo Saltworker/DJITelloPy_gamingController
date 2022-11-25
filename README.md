@@ -1,9 +1,9 @@
 # Fly your tello using your own gaming controller
 Control your Tello-Talent, Tello-EDU or Tello-Ryze with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 
-_This program is primarily targeted towards new tello-users who simply want to fly their tello drone with a controller as easily and effectively as possible._
+*This program is primarily targeted towards new tello-users who simply want to fly their tello drone with a controller as easily and effectively as possible.*
 
-*NOTE: Using a Tello Ryze with this program you will only be able to use features from the SDK 2.0. Tello Ryze users won't be able to do things such as manipulating video quality, using downward camera, etc. Adjustments to the program may be nessecary if using a Tello Ryze with the program - by simply removing specific parts of the code using SDK 3.0 commands.*
+**NOTE: Using a Tello Ryze with this program you will only be able to use features from the SDK 2.0. Tello Ryze users won't be able to do things such as manipulating video quality, using downward camera, etc. Adjustments to the program may be nessecary if using a Tello Ryze with the program - by simply removing specific parts of the code using SDK 3.0 commands.**
 
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
@@ -47,7 +47,7 @@ The current button and axis alignments are:
 - **axis [4]** (L2): While pressed down, use the tello downward camera (IR-sensitive). When not pressed down, use the tello forward camera (colored)
 - **axis[5]** (R2): *NO ASSIGNED FUNCTION*
 
-_NOTE: NO HAT ALIGNMENTS ARE USED IN THE PROGRAM._
+*NOTE: NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.*
 
 FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
 
