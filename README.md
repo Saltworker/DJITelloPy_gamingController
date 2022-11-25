@@ -9,7 +9,11 @@ DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
 
 ![image](https://user-images.githubusercontent.com/82200669/164916832-5ac991d6-1196-4c4e-9c7d-8a842a14ee99.png)
 
-I personally used a playstation dualshock 3 controller.
+I personally switched between using a playstation dualshock 3 controller... 
+
+![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pricerunner.dk%2Fpl%2F165-3200868924%2FSpil-controllere%2FPowerA-Xbox-Series-X-S-Wired-Controller-Black-Sammenlign-Priser&psig=AOvVaw1JvETrc2MH_VDtj68uPVFj&ust=1669462381532000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCm05WeyfsCFQAAAAAdAAAAABAF)
+
+and a xbox powera enhanced wired controller.
 
 The repository contains the program itself as well as a video compiler for the video recordings you can make with the program.
 
@@ -20,7 +24,7 @@ Link: www.pygame.org/docs/ref/joystick.html
 PRO TIP: Use the example program given in the following link to check your controller's inputs
 
 ## 3 STEPS ON HOW TO RUN THE PROGRAM:
-1. Have your desired gaming controller connected to your computer. Make sure your computer reads its input.
+1. Have your desired gaming controller connected to your computer. Make sure your computer and pygame reads its input.
 2. Turn on the tello and connect to its wifi. Make sure to check the SDK version used by tello. Perhaps update it if nessecary.
 3. Install/Import the "DjiTelloPy" repository for use in the program. Then you may run the program.
 
