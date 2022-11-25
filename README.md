@@ -1,6 +1,8 @@
 # Fly your tello using your own gaming controller
 Control your Tello-Talent, Tello-EDU or Tello-Ryze with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 
+This program is primarily targeted towards new tello-users who simply want to fly their tello drone with a controller as easily and effectively as possible.
+
 NOTE: Using a Tello Ryze with this program you will only be able to use features from the SDK 2.0. Tello Ryze users won't be able to do things such as manipulating video quality, using downward camera, etc.
 
 DJITelloPy repository link: https://github.com/damiafuentes/DJITelloPy
@@ -90,12 +92,16 @@ def image_to_video(imagefolder, videoname, fps):
 #############################################################
 ```
 
-## TELLO SDK 3.0 guides:
+## TELLO SDK 2.0 & 3.0 guides:
 
+*SDK 3.0*
 A quick help to understand the commands being sent to the drone would be to check this guide:
 https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf
 
 Mission Pad an Flight Map guide sdk 3.0: https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf
+
+*SDK 2.0*
+https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
 
 ## A little help to use a playstation dualshock 3/4 controller:
 
