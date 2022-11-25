@@ -1,5 +1,5 @@
 import pygame
-from djitellopy import tello
+from djitellopy import tello ### The tello repository utilized. The following import is meant for reference (tello_gaming_controller, ll. 190-199) ###
 import cv2
 import time
 import os
@@ -145,7 +145,7 @@ while not done:
         # joystick.get_axis(5)
         # joystick.get_hat(1)
 
-        if pygame.key.get_focused() == True:
+        if pygame.key.get_focused() == True: #Whilst tabbed on the pygame-window the tello can be controlled
 
             ### The Controllers symbols (X, ◯, □, △; A, B, X, Y; Whatever the combination may be) are utilized for each direction of flipping the drone ###
             if joystick.get_button(0) == 1:
@@ -167,8 +167,8 @@ while not done:
                 cv2.imwrite(f'{dirNameImg}/{time.time()}.jpg', img)
                 print("A picture was taken")
 
-            ### Video recorder - remember to compile it.
-            ### This can be done either with the automatic function, "Video_compiler.py" ###
+            ### Video recorder - remember to compile it. ###
+            ### This can be done with the program "Video_compiler.py" ###
             if joystick.get_button(5) == 1 and recording == False:
                 dirNameVid = f'Resources/Video/{time.time()}' ### Configure name of folder (for images and a video inside project) ###
                 if not os.path.exists(dirNameVid) and recording == False:
@@ -218,11 +218,11 @@ while not done:
                 me.send_command_with_return('downvision 1')
                 downvision = False
 
-            ### Utilizes the two joysticks and their axes as the four dimensions of travel for the Tello drone ###
+            ### Utilizes the two joysticks and their axes as means of moving the Tello drone ###
             me.send_rc_control(int(joystick.get_axis(2) * 100), int(joystick.get_axis(3) * (-100)),
                                int(joystick.get_axis(1) * (-100)), int(joystick.get_axis(0) * 100))
         else:
-            ### OPTIONAL: When tabbed out of the Pygame-window, the Tello drone will only do the following: (is set to rotate) ###
+            ### OPTIONAL: When tabbed out of the Pygame-window, the Tello drone will only do the following: (is set to rotate slowly) ###
             me.send_rc_control(0, 0, 0, 20)
 
         ####################################################################################################
