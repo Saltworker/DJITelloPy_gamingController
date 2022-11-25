@@ -19,8 +19,8 @@ PRO TIP: Use the example program given in the following link to check your contr
 
 ## 3 STEPS ON HOW TO RUN THE PROGRAM:
 1. Have your desired gaming controller connected to your computer. Make sure your computer reads its input.
-2. Turn on the tello and connect to its wifi. Make sure the tello you're using has at least SDK 3.0 by updating its firmware in order to use all of the program's functions accordingly.
-3. Install the "DjiTelloPy" repository for use in the program. Then you may run the program.
+2. Turn on the tello and connect to its wifi. Make sure to check the SDK version used by tello. Perhaps update it if nessecary.
+3. Install/Import the "DjiTelloPy" repository for use in the program. Then you may run the program.
 
 ## ABOUT THE PROGRAM:
 
