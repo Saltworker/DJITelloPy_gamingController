@@ -94,14 +94,14 @@ def image_to_video(imagefolder, videoname, fps):
 
 ## TELLO SDK 2.0 & 3.0 guides:
 
-#SDK 3.0 - Tello-EDU & Tello-Talent
+**SDK 3.0 - Tello-EDU & Tello-Talent**
 
 A quick help to understand the commands being sent to the drone would be to check this guide:
 https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf
 
 Mission Pad an Flight Map guide: https://dl.djicdn.com/downloads/RoboMaster+TT/RoboMaster_TT_Mission_Pad_and_Flight_Map_User_Guide_en.pdf
 
-#SDK 2.0 - Tello ryze
+**SDK 2.0 - Tello ryze**
 
 The only commands possible with the Tello ryze can be seen here:
 https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
