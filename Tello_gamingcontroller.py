@@ -225,9 +225,9 @@ while not done:
             ### OPTIONAL: When tabbed out of the Pygame-window, the Tello drone will only do the following: (is set to rotate slowly) ###
             me.send_rc_control(0, 0, 0, 20)
 
-        ####################################################################################################
-        ### The following covers the pygame-window "My game". This window will show input from the tello ###
-        ####################################################################################################
+        ############################################################################################################
+        ### The following covers the pygame-window "My game". This window will show output values from the tello ###
+        ############################################################################################################
 
         screen.fill(WHITE)
         textPrint.reset()
