@@ -49,7 +49,10 @@ The current button and axis alignments are:
 
 *NOTE: NO HAT ALIGNMENTS ARE USED IN THE PROGRAM.*
 
-FYI: The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object()
+**FYI**: 
+- The pygame window will show data given by the tello through the DJITelloPy command get_own_udp_object(). 
+- The "Result" window show the contents of the get_frame_read() function in order to get the Tello POV. 
+- To use the a gaming controller remember to be tabbed in on the pygame window. Otherwise the Tello won't take its input.
 
 ## You can use this program to compile a video from images:
 The following settings are applied in the program:
