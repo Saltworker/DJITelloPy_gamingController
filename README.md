@@ -1,3 +1,4 @@
+![image](https://media.foto-erhardt.de/images/product_images/popup_images/ryze-tech-tello-powered-by-dji-gamesir-controller-155352107914030304.jpg)
 # Fly your tello using your own gaming controller
 Control your Tello-Talent, Tello-EDU or Tello-Ryze with a gaming controller supported by pygame using the repository 'DJITelloPy'.
 
